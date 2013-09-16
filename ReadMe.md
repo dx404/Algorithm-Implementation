@@ -1,1 +1,1 @@
-This Project is for personal practice for implementation of various algorithms
+This Project is for personal practice of various algorithm implementations
