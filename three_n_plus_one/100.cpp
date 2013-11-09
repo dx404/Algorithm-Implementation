@@ -1,6 +1,7 @@
 /**
  * 3n+1 problem,
  * Collatz conjecture
+ * iterative
  * brute-force
  */
 #include <iostream>
