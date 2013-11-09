@@ -1,6 +1,7 @@
 /**
  * Author: Duo Zhao
- * for C++ review purpose
+ * for C++ review purpose 
+ * c++0x is required for this code
  * the Permutator class takes a vector of generic type T and
  * generating all permutations storing into a tank variable
  * A print function is used to show all permutations to standard output
