@@ -1,3 +1,8 @@
+/**
+ * 3n+1 problem,
+ * Collatz conjecture
+ * brute-force
+ */
 #include <iostream>
 using namespace std;
 
