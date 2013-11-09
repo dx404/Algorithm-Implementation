@@ -1,3 +1,7 @@
+/**
+ *  3n+1 problem
+ *  recursive implementation with memoization
+ */
 #include <iostream>
 #include <map>
 #include <vector>
