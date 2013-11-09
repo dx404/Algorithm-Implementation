@@ -1,3 +1,6 @@
+/**
+ * For generating all permutations for a given string
+ */
 #include <iostream>
 #include <string>
 using namespace std;
@@ -23,3 +26,17 @@ int main(int argc, char *argv[]){
   }
   return 0;
 }
+
+/**
+ * e.g. 
+ * input: 
+ *    abc
+ * 
+ * output: 
+ *    abc
+ *    acb
+ *    bac
+ *    bca
+ *    cab
+ *    cba
+ */
