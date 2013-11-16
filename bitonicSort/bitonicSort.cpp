@@ -4,6 +4,12 @@
 //  Created by Duo Donald Zhao on 11/16/13.
 //  Copyright (c) 2013 Duo Donald Zhao. All rights reserved.
 //  A C++ implementation of Bitonic Sort Algorithm
+// 
+/** Sample
+ * 17
+ * 4 3 17 1 5 8 11 13 2 7 9 14 6 12 10 16 15
+ * 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 
+*/
 
 #include <iostream>
 using namespace std;
