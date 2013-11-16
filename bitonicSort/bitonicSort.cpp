@@ -1,10 +1,9 @@
 //
 //  main.cpp
 //  bitonicSort
-//
 //  Created by Duo Donald Zhao on 11/16/13.
 //  Copyright (c) 2013 Duo Donald Zhao. All rights reserved.
-//
+//  A C++ implementation of Bitonic Sort Algorithm
 
 #include <iostream>
 using namespace std;
