@@ -11,8 +11,8 @@ Sub Hello_Collatz()
     startSeqCol = 3
     isMemo = False
     
-    Dim i As Integer, j As Integer
-    For i = 1 To 100
+    Dim i As Integer, j As Integer  ' Mostly duck typing, variable declarations may be omitted
+    For i = 1 To maxTarget
         Cells(i, 1).Value = i
         Cells(i, startSeqCol).Value = i
         j = startSeqCol + 1
@@ -32,7 +32,7 @@ Sub Hello_Collatz()
                 Cells(i, j).Value = last / 2
             End If
             last = Cells(i, j).Value
-            j = j + 1
+            j = j + 1 ' No ++, += operators in VBA
         Loop
         Cells(i, 2).Value = j - startSeqCol
     Next i
