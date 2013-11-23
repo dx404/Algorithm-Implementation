@@ -1,5 +1,6 @@
 Sub Hello_Collatz()
-    ' Author: Duo Donald Zhao
+    ' Author: Duo Donald Zhao 
+    ' My Maiden code in VBA!!
     ' An Excel VBA demo to illustrate the 3n+1 problem
     ' The Memoization technique does not work well by utilizing cell copying
     ' VBA Basic operations, flow control, cell copying.
