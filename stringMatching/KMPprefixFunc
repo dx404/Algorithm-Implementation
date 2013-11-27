@@ -1,0 +1,45 @@
+In[38]:= KMPprefixFunc[p_] := Module[
+  {
+   pc = Characters@p,
+   },
+  m = Length@pc;
+  pi = Table[0, {i, 1, m}];
+  pi[[1]] = 0;
+  k = 0;
+  For[q = 2, q <= m, q++,
+   While[k > 0 && pc[[k + 1]] != pc[[q]],
+    k = pi[[k]]
+    ];
+   If[pc[[k + 1]] == pc[[q]], k++];
+   pi[[q]] = k;
+   ];
+  Return[{Range[m], pc, pi}];
+  ]
+
+In[45]:= KMPprefixFunc["ababaca"] // Grid
+
+Out[45]= \!\(
+TagBox[GridBox[{
+{"1", "2", "3", "4", "5", "6", "7"},
+{"\<\"a\"\>", "\<\"b\"\>", "\<\"a\"\>", "\<\"b\"\>", "\<\"a\"\>", "\<\
+\"c\"\>", "\<\"a\"\>"},
+{"0", "0", "1", "2", "3", "0", "1"}
+},
+AutoDelete->False,
+GridBoxItemSize->{
+     "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, 
+      "Rows" -> {{Automatic}}, "RowsIndexed" -> {}, "Items" -> {}, 
+      "ItemsIndexed" -> {}}],
+"Grid"]\)
+
+(Debug) In[46]:= KMPprefixFunc["ababaca"]
+
+(Debug) Out[46]= {{1, 2, 3, 4, 5, 6, 7}, {"a", "b", "a", "b", "a", 
+  "c", "a"}, {0, 0, 1, 2, 3, 0, 1}}
+
+(Debug) In[47]:= prefixFunc["ababbabbabbababbabb"]
+
+(Debug) Out[47]= {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+  16, 17, 18, 19}, {"a", "b", "a", "b", "b", "a", "b", "b", "a", "b", 
+  "b", "a", "b", "a", "b", "b", "a", "b", "b"}, {0, 0, 1, 2, 0, 1, 2, 
+  0, 1, 2, 0, 1, 2, 3, 4, 5, 6, 7, 8}}
