@@ -39,14 +39,14 @@ def backDerive(x, y, gDict):
 
 if __name__ == "__main__":
     g=[
-        ('S', 'AB'), \
-        ('S', 'BC'), \
-        ('A', 'BA'), \
-        ('A', 'a'), \
-        ('B', 'CC'), \
-        ('B', 'b'), \
-        ('C', 'AB'), \
-        ('C', 'a')
+        ('S', 'AB'), \ # S->AB
+        ('S', 'BC'), \ # S->BC
+        ('A', 'BA'), \ # A->BA
+        ('A', 'a'), \  # A->a
+        ('B', 'CC'), \ # B->CC
+        ('B', 'b'), \  # B->b
+        ('C', 'AB'), \ # C->AB
+        ('C', 'a')     # C->a
       ];
     t = getCYK_table('ababaa', g)
     for row in t:
