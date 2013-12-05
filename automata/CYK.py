@@ -1,6 +1,7 @@
 # Author: Duo Zhao
 # an implementation of CYK algorithm 
 # for testing string membership to a Context-free grammar
+# The terminal and non-terminal must be a single letter, i.e. single charater token
 # Category: Dynamic programming (without backtracking)
 
 def getCYK_table(s, g):
