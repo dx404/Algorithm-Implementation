@@ -1,5 +1,5 @@
 # Author: Duo Zhao
-# an partial implementation of CYK algorithm 
+# an implementation of CYK algorithm 
 # for testing string membership to a Context-free grammar
 # Category: Dynamic programming (without backtracking)
 
