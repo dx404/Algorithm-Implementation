@@ -1,4 +1,3 @@
-
 # A Python and SQLite Turing Machine simulator
 
 import sqlite3
