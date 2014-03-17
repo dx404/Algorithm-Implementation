@@ -29,7 +29,7 @@ int binSearch(vector <int> &a, int x){
         }
         mid = (start + end) / 2;
     }
-    return start;  // start > end, return the larger one
+    return start;  // start > end, return the larger one, x in (end, start]
 }
 
 /**
