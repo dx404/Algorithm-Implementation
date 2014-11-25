@@ -1,4 +1,6 @@
 #include <iostream>
+#include <bitset>
+using namespace std;
 
 int countBits(int x) {
     int n = 0;
@@ -22,10 +24,16 @@ int countBits_op (int x) {
     return n;
 }
 
-int main() {
+int countBits_builtIn (int x) {
+    return bitset<8*sizeof(x)>(x).count();
+}
+
+int main(int argc, char *argv[]) {
    int x = 111534534;
    cout << countBits (x) << endl;
    cout << countBits_op(x) << endl;
    cout << countBits_r(x) << endl;
+   cout << countBits_builtIn(x) << endl;
    return 0;
 }
+
