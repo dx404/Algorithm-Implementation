@@ -18,14 +18,10 @@ vector<int> mergeSort(vector<int> &x, int a, int b) {
         else 
             merged.push_back(right[j++]);
     }
-    if (j == n) {
-        while (i < m)
-            merged.push_back(left[i++]);
-    }
-    else {
-        while (j < n)
-            merged.push_back(right[j++]);
-    }
+    while (i < m)
+        merged.push_back(left[i++]);
+    while (j < n)
+        merged.push_back(right[j++]);
     return merged;
 }
 
