@@ -1,5 +1,8 @@
-// Implementation of arbituray dimensional array in Morton order layout
-
+/** 
+ * Implementation of arbituray dimensional array in Morton order layout
+ * Created by Duo Donald Zhao on 4/21/15.
+ * Copyright (c) 2015 Duo Donald Zhao. All rights reserved.
+ */
 #include <iostream>
 #include <vector>
 #include <unordered_map>
